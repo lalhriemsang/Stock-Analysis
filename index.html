@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stocks Prices</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+  </head>
+  <body>
+    <div id="chart-and-stocks" class="flex space-between">
+      <div id="chartContainer">
+        <h2>Chart</h2>
+        <canvas id="chart"></canvas>
+        <div class="timeIntervals flex center">
+          <button id="1mo" class="durationBtn">1 month</button>
+          <button id="3mo" class="durationBtn">3 months</button>
+          <button id="1y" class="durationBtn">1 year</button>
+          <button id="5y" class="durationBtn">5 years</button>
+        </div>
+        <div>
+          <ul class="flex">
+            <li class="green">
+              <b>Highest: <span id="highest"></span></b>
+            </li>
+            <li class="red">
+              <b>Lowest: <span id="lowest"></span></b>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="stocks"><h2>Stocks</h2></div>
+    </div>
+    <div id="detailsContainer">
+      <div id="details"></div>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

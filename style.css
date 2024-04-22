@@ -1,0 +1,62 @@
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.center {
+  justify-content: center;
+}
+
+.green {
+  color: green;
+  margin-left: 8px;
+}
+
+.red {
+  color: red;
+  margin-left: 8px;
+}
+
+.stockBtn {
+  margin-right: 8px;
+}
+
+.stockStats {
+  margin-bottom: 5px;
+}
+
+#chartContainer {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  width: 75%;
+}
+#stocks {
+  box-sizing: border-box;
+  width: 20%;
+}
+
+.durationBtn {
+  margin: 2px 5px;
+  /* border: 1px solid red; */
+}
+
+label:focus {
+  outline: none;
+}
+ul {
+  list-style-type: none;
+  list-style: disc;
+}
+ul li {
+  margin-right: 15px;
+  /* border: 1px solid red; */
+  padding-left: 0;
+  /* margin-bottom: 10px; */
+}
